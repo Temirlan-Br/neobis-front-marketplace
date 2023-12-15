@@ -1,0 +1,8 @@
+.logo__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-image: url(/src/assets/logoBG.png);
+  background-size: cover;
+}
