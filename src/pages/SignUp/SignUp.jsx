@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoBlock from '../../components/LogoBlock/LogoBlock';
+import './SignUp.css';
 
 const SignUp = () => {
   return (
     <div className="container">
       <LogoBlock />
+
       <div className="form__block">
+        <h2 className="reg__title">Регистрация</h2>
         <div className="form">
           <input
             type="text"

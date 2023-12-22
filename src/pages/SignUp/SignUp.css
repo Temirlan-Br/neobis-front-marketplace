@@ -1,0 +1,7 @@
+.form__block {
+  position: relative;
+}
+.reg__title {
+  position: absolute;
+  top: 15px;
+}
