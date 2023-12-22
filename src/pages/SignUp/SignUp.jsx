@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoBlock from '../../components/LogoBlock/LogoBlock';
 import './SignUp.css';
+import arrow from '../../assets/arrow.png';
 
 const SignUp = () => {
   return (
@@ -20,7 +21,10 @@ const SignUp = () => {
           <button className="btn-to-log">Далее</button>
         </div>
         <Link to={'/'} className="link-to">
-          Назад
+          <div className="back__link">
+            <img src={arrow} alt="" />
+            <p>Назад</p>
+          </div>
         </Link>
       </div>
     </div>
