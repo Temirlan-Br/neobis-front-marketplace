@@ -1,0 +1,43 @@
+ <Formik
+          initialValues={{
+            name: '',
+            username: '',
+            password: '',
+          }}
+          validateOnBlur
+          onSubmit={(values) => {
+            console.log(values);
+          }}
+        >
+          {({
+            values,
+            errors,
+            touched,
+            handleChange,
+            handleBlur,
+            isValid,
+            handleSubmit,
+            dirty,
+          }) => (
+            <div>
+              <p>
+                <label htmlFor="name">Name</label>
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.name}
+                />
+              </p>
+              <button
+                disabled={!isValid && !dirty}
+                onClick={handleBlur}
+                type="submit"
+              >
+                Send
+              </button>
+            </div>
+          )}
+        </Formik>
