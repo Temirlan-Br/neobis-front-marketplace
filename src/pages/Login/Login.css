@@ -1,5 +1,60 @@
 .container {
   height: 100vh;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+.form__block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 335px;
+}
+.form__input {
+  margin-top: 14px;
+  display: flex;
+  width: 335px;
+  height: 50px;
+
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #c0c0c0;
+}
+::placeholder {
+  color: #c0c0c0;
+}
+
+.form__input:enabled {
+  color: #000000;
+}
+
+.password__block {
+  position: relative;
+}
+.password__block img {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.btn-to-log {
+  width: 335px;
+  height: 44px;
+  border-radius: 25px;
+  background: #5458ea;
+  color: #fff;
+  margin: 24px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.link-to {
+  text-decoration: none;
+  color: #5458ea;
+  font-weight: 500;
 }
