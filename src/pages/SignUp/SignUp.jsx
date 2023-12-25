@@ -10,6 +10,12 @@ const SignUp = () => {
       <LogoBlock />
 
       <div className="form__block">
+        <Link to={'/'} className="link-to">
+          <div className="back__link">
+            <img src={arrow} alt="" />
+            <p>Назад</p>
+          </div>
+        </Link>
         <h2 className="reg__title">Регистрация</h2>
         <div className="form">
           <input
@@ -20,12 +26,6 @@ const SignUp = () => {
           <input type="email" placeholder="Почта" className="form__input" />
           <button className="btn-to-log">Далее</button>
         </div>
-        <Link to={'/'} className="link-to">
-          <div className="back__link">
-            <img src={arrow} alt="" />
-            <p>Назад</p>
-          </div>
-        </Link>
       </div>
     </div>
   );
