@@ -24,7 +24,9 @@ const SignUp = () => {
             className="form__input"
           />
           <input type="email" placeholder="Почта" className="form__input" />
-          <button className="btn-to-log">Далее</button>
+          <Link to={'/registr2'} className="link-to">
+            <button className="btn-to-log">Далее</button>
+          </Link>
         </div>
       </div>
     </div>
